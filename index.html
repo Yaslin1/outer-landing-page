@@ -13,7 +13,7 @@
 <body>
   <nav class="header">
     <img src="images/logo@2x.png" alt="Company Logo">
-    <a href="tel:XXX-XXX-XXXX">Give us a call! XXX-XXX-XXXX</a>
+    <a href="tel:XXX-XXX-XXXX" style="color: white; text-decoration:none; font-size: 20px;">Give us a call! XXX-XXX-XXXX</a>
   </nav>
   <section class="hero">
     <h1>Gain new insight to </br>grow digital revenues </br>faster.</h1>
@@ -22,6 +22,7 @@
       <path fill="#2c394a" fill-opacity="1" d="M0,160L1440,96L1440,0L0,0Z"></path>
     </svg>
   </section>
+
   <section class="content">
     <section>
       <p>In a FREE consultation discussion with our experts you will recieve a live website </br>
@@ -54,16 +55,18 @@
       </div>
     </section>
 
-    <form class="form-section">
+    <form class="form-section" id="form">
       <p style="color:#ce417a; text-align:center; font-size: 18px; font-weight:600; letter-spacing:3px;">FREE</p>
       <h2>Website Strategy Session</h2>
       <div class="input-field">
         <label for="firstName">First Name*</label>
-        <input class="input-style" type="text" id="firstName" name="firstName" placeholder="First Name*">
+        <input class="input-style" type="text" id="firstName" name="firstName">
+        <div id="firstNameError" class="error-message"></div>
       </div>
       <div class="input-field">
         <label for="lastName">Last Name*</label>
-        <input class="input-style" type="text" id="lastName" name="lastName" placeholder="Last Name*">
+        <input class="input-style" type="text" id="lastName" name="lastName">
+        <div id="lastNameError" class="error-message"></div>
       </div>
       <div class="input-field">
         <label for="website">Website(optional)</label>
@@ -71,17 +74,19 @@
       </div>
       <div class="input-field">
         <label for="email">Email</label>
-        <input class="input-style" type="email" id="email" name="email" placeholder="email">
+        <input class="input-style" type="email" id="email" name="email">
+        <div id="emailError" class="error-message"></div>
       </div>
       <div class="input-field">
         <label for="telephone">Phone Number*</label>
-        <input class="input-style" type="tel" id="telephone" name="telephone" placeholder="telephone">
+        <input class="input-style" type="tel" id="telephone" name="telephone">
+        <div id="telephoneError" class="error-message"></div>
       </div>
       <button class="submit-button" type="submit">REQUEST SESSION</button>
     </form>
     <section>
-      <hr>
-      <h2> We make working together easy.</h2>
+      <hr style="margin-top: 60px;">
+      <h2 style="margin-top: 60px;"> We make working together easy.</h2>
       <div class="cards">
         <div class="card">
           <img src="images/vid-chat.png" alt="Icon for Video Conversation">
@@ -107,7 +112,7 @@
     </section>
 
     <section>
-      <h3 style="text-align:center;">TRUSTED BY:</h3>
+      <h3 style="text-align:center;letter-spacing: 3px; font-size: 20px;">TRUSTED BY:</h3>
       <div class="trusted-logos">
         <button class="prev">
           <svg width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.63 45.02"><polygon points="22.51 0 24.63 2.12 4.24 22.51 24.63 42.9 22.51 45.02 0 22.51 22.51 0" style="fill:#a2b9c2"/></svg>
@@ -148,9 +153,10 @@
         </button>
     </section>
   </section>
+  
   <footer class="footer">
     <div>
-      <img src="images/logo-icon@2x.png" alt="">
+      <img src="images/logo-icon@2x.png" alt="Company Logo" style="height:45px; padding-bottom: 20px;">
       <p>© 2023 All Rights Reserved.</p>
     </div>
   </footer>
