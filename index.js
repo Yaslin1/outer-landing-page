@@ -67,28 +67,40 @@ function validateForm(e) {
   }
 
   if (!lastName.value.trim()) {
+    const input = document.getElementById("lastName");
     const text = document.getElementById('lastNameError')
     text.textContent = 'Please enter a valid Last Name';
-    text.style.color = "red"
-    text.style.fontStyle = "italic"
+    input.style.border = "1px solid #cf4127";
+    input.style.backgroundColor = "#fdf9f7";
+    input.style.color = "#cf4127";
+    text.style.color = "red";
+    text.style.fontStyle = "italic";
     isValid = false;
   }
 
   if (!telephone.value.trim()) {
+    const input = document.getElementById("telephone");
     const text = document.getElementById('telephoneError')
     text.textContent = 'Please enter a valid Phone Number';
-    text.style.color = "red"
-    text.style.fontStyle = "italic"
+    input.style.border = "1px solid #cf4127";
+    input.style.backgroundColor = "#fdf9f7";
+    input.style.color = "#cf4127";
+    text.style.color = "red";
+    text.style.fontStyle = "italic";
     isValid = false;
   }
 
   const emailInput = document.getElementById('email')
   const isValidEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emailInput.value)
   if (!isValidEmail) {
+    const input = document.getElementById("email");
     const text = document.getElementById('emailError')
     text.textContent = 'Please enter a valid Email';
-    text.style.color = "red"
-    text.style.fontStyle = "italic"
+    input.style.border = "1px solid #cf4127";
+    input.style.backgroundColor = "#fdf9f7";
+    input.style.color = "#cf4127";
+    text.style.color = "red";
+    text.style.fontStyle = "italic";
     isValid = false;
   }
 
